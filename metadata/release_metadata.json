@@ -1,0 +1,68 @@
+{
+  "dataset_name": "QuantifiableCracks",
+  "phase": 1,
+  "phase_label": "Phase 1 / initial data batch",
+  "version": "0.1.0",
+  "prepared_on": "2026-10-27",
+  "license": "MIT",
+  "annotation_tool_url": "https://github.com/levyw3847-arch/Semi-auto-Annotating-tool",
+  "counts": {
+    "samples": 158,
+    "images": 158,
+    "png_masks": 158,
+    "json_annotations": 158,
+    "data_files": 474,
+    "polygons": 228
+  },
+  "image": {
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB",
+    "description": "Processed surface-crack region of interest"
+  },
+  "mask": {
+    "format": "PNG",
+    "mode": "L",
+    "background_value": 0,
+    "crack_value": 255,
+    "all_masks_nonempty": true
+  },
+  "json": {
+    "base_structure": "Labelme-style polygons",
+    "custom_exact_mask_field": "mask_rle",
+    "rle_format": "coco_uncompressed",
+    "rle_flattening_order": "F",
+    "imageData": null
+  },
+  "annotation_fidelity": {
+    "rle_exact_matches": 158,
+    "polygon_exact_matches": 107,
+    "polygon_nonexact_matches": 51,
+    "polygon_mean_iou": 0.997860935294038,
+    "polygon_min_iou": 0.900292302696,
+    "recommended_pixel_reference": "PNG masks or decoded mask_rle"
+  },
+  "not_included_in_this_batch": [
+    "original full-frame acquisition photographs",
+    "camera intrinsics and lens-distortion coefficients",
+    "ArUco corner coordinates",
+    "per-image physical-scale metadata",
+    "verified specimen identifiers",
+    "official train/validation/test assignments",
+    "geometric measurement results"
+  ],
+  "physical_pixel_scale_mm": null,
+  "future_updates": "Additional data will be supplied in subsequent releases; additions and corrections will be versioned and documented.",
+  "preparation": {
+    "duplicate_image_copies_omitted": 158,
+    "image_and_mask_bytes_preserved": true,
+    "json_fields_normalized": [
+      "imagePath",
+      "sourceMask"
+    ]
+  },
+  "publication_status_at_preparation": "not_uploaded",
+  "release_tag": "v0.1.0",
+  "repository_url": "https://github.com/levyw3847-arch/QuantifiableCracks"
+}
